@@ -1,0 +1,27 @@
+.gallery {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.gallery h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+.showcase {
+    margin-top: 20px;
+}
+
+.photos img {
+    width: 70%;
+    height: 400px;
+    object-fit: contain;
+}
+
+@media (max-width: 540px) {
+    .photos img {
+        width: 95%;
+        height: 300px;
+    }
+}

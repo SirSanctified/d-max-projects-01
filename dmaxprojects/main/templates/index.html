@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <title>DMax Projects | Home</title>
+
+    <meta name="author" content="Pritchard Mambambo aka Sir Sanctified">
+    <link rel="canonical" href="{{request.path}}">
+    <meta name="description" content="DMax Projects provides various renovation services.">
+    <meta name="keywords" content="renovation, roof, pool maintenance, floor, kitchen, bathroom, painting, paving, post-renovation cleaning">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/index.js' %}" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img loading="lazy" src="{% static 'images/logo.svg' %}" alt="DMax logo">
+                    <h1>
+                        DMax Projects
+                    </h1>
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/gallery/">Gallery</a></li>
+                <li><a href="/#faqs  ">FAQs</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <button type="button" id="open-menu"><i class="uim uim-bars"></i></button>
+            <button type="button" id="close-menu"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+    <main>
+        <div class="container ">
+            <div id="hero">
+                <div>
+                    <h3 class="hidden">We Build Your Dream</h3>
+                    <h1 class="hidden">Together.</h1>
+                    <h2 class="hidden">Providing All Kinds Of Renovation Services</h2>
+                </div>
+                <div>
+                    <h2>Roof Renovations</h2>
+                    <p>
+                        It is crucial to keep the roof solid and vigilant so it can protect your home and everyone in it.
+                    </p>
+                </div>
+                <div>
+                    <h2>Bathroom Renovations</h2>
+                    <p>We transform your bathroom into much more than just another room in the house into a safe haven.</p>
+                </div>
+                <div>
+                    <h2>Landscape Renovations</h2>
+                    <p>Want to maintain the appearance of your landscape? We have got you covered</p>
+                </div>
+                <div>
+                    <h2>Renovations Advisory</h2>
+                    <p>Want to do the renovations on your own but do not know where to start? We help you from suggesting improvements through budget establishment.</p>
+                </div>
+            </div>
+            <div class="hero__btn hidden">
+                <a href="//services/">Our Services</a>
+                <a href="/contact/">Contact Us</a>
+            </div>
+            <div class="centred hidden">
+                <h2 class="hidden">Committed To Superior &amp; Quality Results</h2>
+                <p class="hidden">
+                    Our core values have been shaped over three years of delivering the finest renovation services to our clients. They stood the test of time and these principles form the bedrock of our lynchpins. We never tried to cut on either quality, the pace of work, or any other renovation aspect. We stay true to our full promise of efficiency!
+                </p>
+                <a href="#about">Read More</a>
+            </div>
+        </div>
+        <div class="call">
+            <h1>Call Us Today <span><i class="uil uil-phone"></i>+27 67 940 1590</span></h1>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/27749027591?text=Hello%2C%20DMax%20Projects.%20I%20am%20interested%20in%20your%20services%20and%20would%20like%20to%20know%20more."><i class="uil uil-whatsapp-alt"></i></a>
+        </div>
+    </main>
+    <section class="container" id="services">
+        <div class="services__content">
+            <h1 class="hidden">It's not just work, it's a calling!</h1>
+            <p class="hidden">You are thinking of buying a house, or maybe you just moved into a new home, and you have a list of renovations you want to be done but no idea where to start? Deciding on how to prioritize your projects, let alone pick a paint colour, isn't easy. The good news is that we are here to help you in every step until all you work is done!</p>
+            <div class="cards">
+                <div class="card hidden" id="roof">
+                    <div class="image">
+                        <h1>Roof Renovations</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="kitchen">
+                    <div class="image">
+                        <h1>Kitchen Renovations</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="bathroom">
+                    <div class="image">
+                        <h1>Bathroom Renovations</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="floor">
+                    <div class="image">
+                        <h1>Floor Renovations</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="basement">
+                    <div class="image">
+                        <h1>Basement Renovations</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="landscape">
+                    <div class="image">
+                        <h1>Landscape Renovations</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="cleaning">
+                    <div class="image">
+                        <h1>Post-Renovation Cleaning</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="painting">
+                    <div class="image">
+                        <h1>Painting</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="paving">
+                    <div class="image">
+                        <h1>Paving</h1>
+                    </div>
+                </div>
+                <div class="card hidden" id="pool">
+                    <div class="image">
+                        <h1>Pool Maintenance</h1>
+                    </div>
+                </div>
+            </div>
+            <a href="/services/" class="hidden">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="header hidden">
+            <div>
+                <h1>About DMax Projects</h1>
+                <p>Delivering a better world.</p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container container__about">
+                <div class="content">
+                    <div class="vision hidden">
+                        <h1><i class="uil uil-eye"></i></h1>
+                        <h1>Vision</h1>
+                        <p>To create and maintain thriving landscapes using modern tools, designs and management techniques.</p>
+                    </div>
+                    <div class="mision hidden">
+                        <h1><i class="uil uil-focus-target"></i></h1>
+                        <h1>Mission</h1>
+                        <p>Our vision is to create a better everyday life for many people.</p>
+                    </div>
+                </div>
+                <div class="featured hidden">
+                    <h1><i class="uil uil-dna"></i></h1>
+                    <h1>Values</h1>
+                </div>
+                <div class="values">
+                    <div class="value transparency hidden">
+                        <h2><i class="uil uil-search"></i></h2>
+                        <h4>Transparency</h4>
+                        <p>We believe transparency, honesty, kindness, good stewardship, helps us and our clients to get to higher levels.</p>
+                    </div>
+                    <div class="value efficiency hidden">
+                        <h2><i class="uil uil-bolt"></i></h2>
+                        <h4>Efficiency</h4>
+                        <p>We believe in doing things right, and doing the right things.</p>
+                    </div>
+                    <div class="value reliability hidden">
+                        <h2><i class="uil uil-shield-check"></i></h2>
+                        <h4>Reliability</h4>
+                        <p>We strive to facilitate results that are significant, consistent and effective to our customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why">
+        <div class="container header hidden">
+            <h1>Why Choose Us For Your Next Task?</h1>
+        </div>
+        <div class="container container__why">
+            <div class="left__why">
+                <div class="cards hidden">
+                    <div class="card">
+                        <h2>Quality Results</h2>
+                        <p>The quality of our work is unmatched. We are committed to providing results that satisfy our clients.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Affordable Prices</h2>
+                        <p>Our pricing is flexible to meet all of your project needs. Affordaable prices for high quality work.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Deadline-oriented</h2>
+                        <p>We believe time is precious and that every second counts. We get the job done as quickly as possible without compromising on quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right__why hidden">
+                <img loading="lazy" src="{% static 'images/why.jpg' %}" alt="Nice pavement with flowers">
+            </div>
+        </div>
+    </section>
+    <section id="faqs">
+        <div class="container hidden">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="container container__faqs">
+            <div class="faq__image">
+                <img loading="lazy" src="{% static 'images/question.png' %}" alt="Man questioning" class="hidden">
+            </div>
+            <div class="faqs">
+                <div class="faq hidden">
+                    <div class="icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h4>Do you travel across cities or you only operate in Pretoria?</h4>
+                        <p>
+                            Our primary location is in Pretoria but we travel across cities if you hire us. We are a mobile company.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq hidden">
+                    <div class="icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h4>How do I see your previous work before i consider hiring you?</h4>
+                        <p>
+                            All of our previous work can be found on the portifolio page on this site. Click on portifolio on the navigation menu to navigate to our work. You can also see what others are saying about us.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq hidden">
+                    <div class="icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h4>How long dou you often take to complete a project?</h4>
+                        <p>
+                            It depends on the magnitude of the work to be done, but we strive to complete every task within a short time frame.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq hidden">
+                    <div class="icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h4>Is this a new company? Can I trust you?</h4>
+                        <p>
+                            Our company is three years old now. As for trusting us, we assure you that your sites are and will be safe even after working on them. We cannot upvote ourselves, you may check on what our clients have to say.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% if testimonials %}
+    <section class="container testimonials">
+        <div class="header">
+            <h2>What Our Clients Say About Us</h2>
+        </div>
+        <div class="container__testimonials swiper">
+            <div class="swiper-wrapper">
+                <div class="testimonial swiper-slide">
+                    {% for testimonial in testimonials %}
+                    {% if testimonial.is_active %}
+                    <div class="avatar">
+                        <div>
+                            <img loading="lazy" src="{{ testimonial.image.url }}" alt="{{ testimonial.full_name }}">
+                        </div>
+                        <h6>{{ testimonial.full_name }}</h6>
+                        <p><small>{{ testimonial.location }}</small> </p>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>{{ testimonial.testimonial_body }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="swipper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    {% endif %}
+    <footer>
+        <div class="container">
+            <div class="links">
+                <div class="location">
+                    <h4>Address:</h4>
+                    <p><small>Plot 103, Dellwood Road</small></p>
+                    <p><small>Willow Brae, Pretoria East</small></p>
+                </div>
+                <div class="footer__menu">
+                    <p>Permalinks</p>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="/gallery/">Gallery</a></li>
+                        <li><a href="/#faqs  ">FAQs</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <p>Follow us on social media to get the latest updates.</p>
+                    <ul>
+                        <li><a href="javascript.void()"><i class="uil uil-linkedin"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-instagram-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p><small>Copyright <i class="uil uil-copyright"></i>2022 DMax Projects. All rights reserved.</small></p>
+                <p><small>Made with <i class="uil uil-heart"></i> by <a href="https://www.pritchardmambambo.tech">Pritchard Mambambo</a></small></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            autoplay: {
+                delay: 8000,
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            mousewheel: {
+                invert: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true
+            },
+        });
+    </script>
+</body>
+
+</html>

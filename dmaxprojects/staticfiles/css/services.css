@@ -1,0 +1,99 @@
+main {
+    padding-top: 100px;
+    background-image: url(../images/why.jpg);
+}
+
+#main {
+    margin: auto;
+    width: 70%;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+#main p {
+    animation: colorChanger 20s ease-in-out 5s infinite alternate;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@keyframes colorChanger {
+    0% {
+        color: #000;
+    }
+
+    25% {
+        color: #fff;
+    }
+
+    50% {
+        color: #0000ff;
+    }
+
+    75% {
+        color: #ff000f;
+    }
+}
+
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+h6 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.container h5,
+h6 {
+    margin: 10px 0 10px 0;
+}
+
+footer .location h4 {
+    text-align: start;
+    margin: inherit;
+}
+
+.renovations img,
+.paving img,
+.pool img {
+    width: 70%;
+    height: 300px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.advisory img {
+    object-fit: contain;
+}
+
+
+.renovations__container {
+    margin-top: 40px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.roof ul {
+    list-style: none;
+}
+
+
+@media (max-width: 64rem) {
+    #main {
+        width: 90%;
+    }
+
+    .renovations {
+        grid-template-columns: 1fr;
+    }
+
+    .renovations .intro {
+        grid-column: unset;
+    }
+}

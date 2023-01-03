@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>DMax Projects | Gallery</title>
+
+    <meta name="author" content="Pritchard Mambambo aka Sir Sanctified">
+    <link rel="canonical" href="{{request.path}}">
+    <meta name="description" content="DMax Projects provides various renovation services.">
+    <meta name="keywords" content="renovation, roof, pool maintenance, floor, kitchen, bathroom, painting, paving, post-renovation cleaning">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <script src="{% static 'js/index.js' %}" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img loading="lazy" src="{% static 'images/logo.svg' %}" alt="DMax logo">
+                    <h1>
+                        DMax Projects
+                    </h1>
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/gallery/">Gallery</a></li>
+                <li><a href="/#faqs  ">FAQs</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <button type="button" id="open-menu"><i class="uim uim-bars"></i></button>
+            <button type="button" id="close-menu"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="gallery">
+            <h1>Discover a few of our most successful projects</h1>
+            <p>What We Do. Exclusive service.</p>
+            {% for portfolio in portfolios %}
+            <div class="showcase">
+                <h2>{{ portfolio.service.name }}</h2>
+                <div class="photos">
+                    <h3>Before</h3>
+                    <img src="{{ portfolio.image_before.url }}" alt="Before renovation">
+                    <h3>After</h3>
+                    <img src="{{ portfolio.image_after.url }}" alt="After renovation">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="links">
+                <div class="location">
+                    <h4>Address:</h4>
+                    <p><small>Plot 103, Dellwood Road</small></p>
+                    <p><small>Willow Brae, Pretoria East</small></p>
+                </div>
+                <div class="footer__menu">
+                    <p>Permalinks</p>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="/#faqs  ">FAQs</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                    <div class="whatsapp">
+                        <a href="https://wa.me/27749027591?text=Hello%2C%20DMax%20Projects.%20I%20am%20interested%20in%20your%20services%20and%20would%20like%20to%20know%20more."><i class="uil uil-whatsapp-alt"></i></a>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p>Follow us on social media to get the latest updates.</p>
+                    <ul>
+                        <li><a href="javascript.void()"><i class="uil uil-linkedin"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-instagram-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p><small>Copyright <i class="uil uil-copyright"></i>2022 DMax Projects. All rights reserved.</small></p>
+                <p><small>Made with <i class="uil uil-heart"></i> by <a href="https://www.pritchardmambambo.tech">Pritchard Mambambo</a></small></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

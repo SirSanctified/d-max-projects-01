@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>DMax Projects | Services</title>
+
+    <meta name="author" content="Pritchard Mambambo aka Sir Sanctified">
+    <link rel="canonical" href="{{request.path}}">
+    <meta name="description" content="DMax Projects provides various renovation services.">
+    <meta name="keywords" content="renovation, roof, pool maintenance, floor, kitchen, bathroom, painting, paving, post-renovation cleaning">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <script src="{% static 'js/index.js' %}" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img loading="lazy" src="{% static 'images/logo.svg' %}" alt="DMax logo">
+                    <h1>
+                        DMax Projects
+                    </h1>
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="/gallery/">Gallery</a></li>
+                <li><a href="/#faqs  ">FAQs</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <button type="button" id="open-menu"><i class="uim uim-bars"></i></button>
+            <button type="button" id="close-menu"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+    <main>
+        <div id="main" class="container">
+            <h1>Explore Our Services</h1>
+            <p>We have been transforming ideas into eye-catching realilities.</p>
+        </div>
+    </main>
+    <section class="renovations container">
+        <div class="intro">
+            <h2>Renovations</h2>
+            <p>Do you have chipped floors, faulty bathroom fixtures, very old lighting fixtures, cracked paint, termite infestations, warping and eaten up flower beds, torn screen from crazy cat, roof and gutter issues, ... You are at the right place. We do:</p>
+        </div>
+        <div class="renovations__container">
+            <article class="roof">
+                <h4>Roof Renovations</h4>
+                <img loading="lazy" src="{% static 'images/renovations.jpg' %}" alt="">
+                <p>It is unfortunate that no roof lasts forever, but, fortunately, we are there to renovate it for you!</p>
+                <h5>Signs You May Need Your Roof Renovated</h5>
+                <ul>
+                    <li>
+                        <h6>Damaged Shingles</h6>
+                        <p>
+                            Probably the most notable red flag for roof inspection is when you see damaged or missing shingles on your roof.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Gutter Health</h6>
+                        <p>
+                            Did you you know your gutter systems can say a whole lot about about your roof? While it is normal to find leaves and other occassional debris in your gutter, it is not OK to notice granules.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Sagging Roof</h6>
+                        <p>
+                            A roof should be strong and rigid to protect your home and family. Every component needs to be in place and none of them dhould be heavily damaged or missing.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Leaks</h6>
+                        <p>
+                            It usually occurs when shingles fall off and allow water to flow through the cracks. Just beacause you haven't seen a leak doesn't mean there isn't one.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    When you notice any of these red flags, do not hesitate to call us. "When it comes to roofs, it is always better to fix things sooner than later!"
+                </p>
+            </article>
+            <article class="floor">
+                <h4>Floor Renovations &amp; Tiling</h4>
+                <img loading="lazy" src="{% static 'images/tiling.jpg' %}" alt="">
+                <p>
+                    Your floor is one of the most important elements in your interior, so it has to be perfect. Considering resurfacing? Renovating your interior? We get it - there are endless options for the tiles, and making a choice can be difficult.
+                    <br><br>
+                    Tiling a room or resurfacing it is a significant investment; and you may be stuck with your tile selection for a long time. This is not a decision that should be taken lightly, let alone hiring a professional to do the tiling for you. We've got you. We help you from tile selection to the actual tiling.
+                </p>
+            </article>
+            <article class="painting">
+                <h4>Painting</h4>
+                <img loading="lazy" src="{% static 'images/painting.jpeg' %}" alt="">
+                <p>
+                    Painting is one of the fastest ways to transform your home from mundane to inspiring. Doing it on a regular basis not only enhances the visual appeal of your home, but also helps increase it's property value. Since it is a time-consuming and sometimes a tricky affair, it should be done appropriately and with proper care.
+                    <br><br>
+                    An efficient painting not only protects the walls, but X2 the beauty of homes. That is why you should consider hiring us. We guarantee a safe and cost effective painting.
+                </p>
+            </article>
+            <article class="bathroom">
+                <h4>Bathroom Renovations</h4>
+                <img loading="lazy" src="{% static 'images/bathroom.webp' %}" alt="">
+                <p>
+                    There is a lot more to the bathroom than we would think. We transform it into much more than just another room in your house into a safe haven. A renovated bathroom gives a sense of security and satisfaction that in return provides peace of mind.
+                </p>
+            </article>
+            <article class="kitchen">
+                <h4>Kitchen Renovations</h4>
+                <img loading="lazy" src="{% static 'images/kitchen.jpeg' %}" alt="">
+                <p>
+                    Kitchens tend to be where we spend a lot of our time in the house. It is also where we prepare food for aourselves and our families. So it makes sense to renovate the kitchen when you have the opportunity.
+                </p>
+            </article>
+            <article class="basement">
+                <h4>Basement Renovations</h4>
+                <img loading="lazy" src="{% static 'images/basement.jpeg' %}" alt="">
+                <p>
+                    We transform the unfinished space below your home into beautiful, functional living area that you can use for storage, recreation or even sa a rental.
+                </p>
+            </article>
+            <article class="landscape">
+                <h4>Landscape Renovations &amp; Instant Lawns</h4>
+                <img loading="lazy" src="{% static 'images/lawn.jpg' %}" alt="">
+                <p>
+                    Gardens are living organisms, and like all living things, they age. Just as human beings dress and groom themselves to look good, gardens too need to be designed and groomed to look their best. We help you maintain and improve the thrilling look of your garden.
+                </p>
+            </article>
+            <article class="cleaning">
+                <h4>Post-Renovation Cleaning</h4>
+                <img loading="lazy" src="{% static 'images/cleaning.webp' %}" alt="">
+                <p>
+                    We help you clean your home immediately after renovation works have been carried out. We take care of all potential issues, problems and disruptions before you turn into your property. You may be ready to move in, but there can still be a few things left to take care of before you call it good.
+                </p>
+            </article>
+            <article class="advisory">
+                <h4>Renovation Advisory</h4>
+                <img loading="lazy" src="{% static 'images/services.jpg' %}" alt="">
+                <p>
+                    Do not want to hire a professional to do the renovation for you? Want to do that renovation yourself but do not know whre to start? We've got you - we look at the options and the styles you want and advise you on their practicality, suggesting improvements. We also help you establish a budget.
+                    <br>
+                    Not sure which design might be the best for your space? We help you decide better by drawing up a plan for the renovation.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="paving container">
+        <h2>Paving</h2>
+        <img loading="lazy" src="{% static 'images/paving.jpg' %}" alt="">
+        <p>
+            Paving is an important part of any property's maintenance strategy, whether it is a home, a business, or an industrial space. It unquestionably adds to the design value of the space while also providing numerous advantages when done right. We help you realise these advantages by giving a professional finish to your work.
+        </p>
+    </section>
+    <section class="pool container">
+        <h2>Pool Maintenance</h2>
+        <img loading="lazy" src="{% static 'images/pool.jpeg' %}" alt="">
+        <p>
+            Swimming Pool maintenance is the back bone of the healthy swimming pool. Regularly cleaning your pool is one of them. But there are other things that you need to keep in mind. Your swimming pool may not be safe from harmful disease and bacteria without regular maintenance, especially properly balancing the water and ensuring proper filtration and circulation. For instance, balancing its pH levels and sanitizing it with chlorine are also part of your pool maintenance.
+            <br><br>
+            While it can be time-consuming and difficult to understand, keeping your pool clean and healthy can be done by professionals who know exactly how to maintain your pool and prevent it from any damage.
+        </p>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="links">
+                <div class="location">
+                    <h4>Address:</h4>
+                    <p><small>Plot 103, Dellwood Road</small></p>
+                    <p><small>Willow Brae, Pretoria East</small></p>
+                </div>
+                <div class="footer__menu">
+                    <p>Permalinks</p>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="/gallery/">Gallery</a></li>
+                        <li><a href="/#faqs  ">FAQs</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <p>Follow us on social media to get the latest updates.</p>
+                    <ul>
+                        <li><a href="javascript.void()"><i class="uil uil-linkedin"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="javascript.void()"><i class="uil uil-instagram-alt"></i></a></li>
+                    </ul>
+                </div>
+                <div class="whatsapp">
+                    <a href="https://wa.me/27749027591?text=Hello%2C%20DMax%20Projects.%20I%20am%20interested%20in%20your%20services%20and%20would%20like%20to%20know%20more."><i class="uil uil-whatsapp-alt"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p><small>Copyright <i class="uil uil-copyright"></i>2022 DMax Projects. All rights reserved.</small></p>
+                <p><small>Made with <i class="uil uil-heart"></i> by <a href="https://www.pritchardmambambo.tech">Pritchard Mambambo</a></small></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
